@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/math_operation"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:gravity="end"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:ellipsize="start"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_ac"
+                android:text="AC"
+            />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_brck"
+                android:text="("
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_brckt"
+                android:text=")"
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_div"
+                android:text="/"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="1"
+                android:id="@+id/btn_1"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="2"
+                android:id="@+id/btn_2"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="3"
+                android:id="@+id/btn_3"
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:text="*"
+                android:id="@+id/btn_mult"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="4"
+                android:id="@+id/btn_4"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="5"
+                android:id="@+id/btn_5"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="6"
+                android:id="@+id/btn_6"
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:text="+"
+                android:id="@+id/btn_sum"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="7"
+                android:id="@+id/btn_7"
+                />
+
+            <TextView
+                android:id="@+id/btn_8"
+                style="@style/NumberButton"
+                android:text="8" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="9"
+                android:id="@+id/btn_9"
+                />
+
+            <TextView
+                style="@style/ActionButton"
+                android:text="-"
+                android:id="@+id/btn_min"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="."
+                android:id="@+id/btn_point"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="0"
+                android:id="@+id/btn_0"
+                />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="Back"
+                android:id="@+id/btn_back"
+                />
+            <TextView
+                style="@style/ActionButton"
+                android:text="="
+                android:id="@+id/btn_eaq"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
